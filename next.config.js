@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
-  exportTrailingSlash: true,
-   exportPathMap: function(){
-        return {
-        '/': {pages:'/'}
-    }
+  env: {
+    API_KEY: process.env.API_KEY,
+  },
 }
